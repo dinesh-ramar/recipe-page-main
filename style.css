@@ -180,7 +180,14 @@ section.Instructions {
     color: var(--Nutmeg);
 }
 
+@media (min-width: 1440px) {
+    body {
+        padding: 9.8% 0;
+    }
+}
+
 @media (max-width: 426px) {
+
     main {
         border-radius: 0;
         padding-top: 0;
