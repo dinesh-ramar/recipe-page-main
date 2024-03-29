@@ -172,6 +172,10 @@ section.Instructions {
     width: 51%;
 }
 
+.Nutrition tr:last-child td {
+    border-bottom: 0;
+}
+
 .Nutrition td strong {
     color: var(--Nutmeg);
 }
