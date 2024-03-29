@@ -1,0 +1,228 @@
+:root {
+    --Nutmeg: hsl(14, 45%, 36%);
+    --Dark-Raspberry: hsl(332, 51%, 32%);
+    --White: hsl(0, 0%, 100%);
+    --Rose-White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light-Grey: hsl(30, 18%, 87%);
+    --Wenge-Brown: hsl(30, 10%, 34%);
+    --Dark-Charcoal: hsl(24, 5%, 18%);
+    --outfit: "Outfit", sans-serif;
+    --young-serif: "Young Serif", serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--outfit);
+    font-style: normal;
+    color: var(--Wenge-Brown);
+}
+
+body {
+    background: var(--Eggshell);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+}
+
+main {
+    background: var(--White);
+    max-width: 736px;
+    padding: 40px 0 27px 0;
+    border-radius: 24px;
+}
+
+section {
+    margin: 0 40px;
+}
+
+.banner {
+    margin: 0 40px 28px 40px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+h1 {
+    font-family: var(--young-serif);
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 17px;
+    color: var(--Dark-Charcoal);
+}
+
+.Heading p {
+    line-height: 22px;
+}
+
+.Heading {
+    margin-bottom: 35px;
+}
+
+section.time {
+    background: var(--Rose-White);
+    padding: 24px 27px 16px;
+    border-radius: 10px;
+    margin-bottom: 29px;
+}
+
+.time h3 {
+    font-weight: 700;
+    color: var(--Dark-Raspberry);
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.time ul {
+    margin-left: 24px;
+}
+
+.time li {
+    padding-left: 18px;
+    padding-bottom: 12px;
+}
+
+.time li::marker {
+    color: var(--Dark-Raspberry);
+}
+
+.time strong {
+    font-weight: 600;
+}
+
+h2 {
+    font-family: var(--young-serif);
+    color: var(--Nutmeg);
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.Ingredients h2 {
+    margin-bottom: 20px;
+}
+
+.Ingredients ul {
+    margin-left: 22px;
+}
+
+.Ingredients li {
+    padding-left: 18px;
+    padding-bottom: 12px;
+}
+
+.Ingredients li::marker,
+.Instructions li::marker {
+    color: var(--Nutmeg);
+}
+
+section.Ingredients {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #5f574e;
+    margin-bottom: 27px;
+}
+
+.Instructions h2 {
+    margin-bottom: 20px;
+}
+
+.Instructions ol {
+    margin-left: 24px;
+}
+
+.Instructions li {
+    padding-left: 16px;
+    line-height: 23px;
+    padding-bottom: 10px;
+}
+
+section.Instructions {
+    margin-bottom: 26px;
+    border-bottom: 1px solid #5f574e;
+    padding-bottom: 20px;
+}
+
+.Nutrition h2 {
+    margin-bottom: 20px;
+}
+
+.Nutrition p {
+    margin-bottom: 13px;
+}
+
+.Nutrition table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.Nutrition td {
+    border-bottom: 1px solid #5f574e;
+    padding: 14px 0;
+}
+
+.Nutrition td:first-child {
+    padding-left: 32px;
+    width: 51%;
+}
+
+.Nutrition td strong {
+    color: var(--Nutmeg);
+}
+
+@media (max-width: 426px) {
+    main {
+        border-radius: 0;
+        padding-top: 0;
+    }
+
+    section {
+        margin: 0 32px;
+    }
+
+    .banner {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .banner img {
+        border-radius: 0;
+    }
+
+    .banner {
+        margin-bottom: 36px;
+    }
+
+    h1 {
+        font-size: 36px;
+        line-height: 36px;
+        margin-bottom: 24px;
+    }
+
+    .Heading p {
+        line-height: 24px;
+    }
+
+    .Heading {
+        margin-bottom: 28px;
+    }
+
+    section.time {
+        padding: 24px 23px 16px;
+        margin-bottom: 20px;
+    }
+
+    .time li {
+        line-height: 22px;
+    }
+
+    .Ingredients li {
+        line-height: 21px;
+    }
+}
